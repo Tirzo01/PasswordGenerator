@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css" class="css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Password Generator</h2>
+      <div class="wrapper">
+        <div class="password">
+          <input type="text" id="password" placeholder="P4$5W0rD" disabled />
+          <div class="copy_container">
+            <span id="copy_span"> Copied</span>
+            <button id="copy_btn" class="copy-btn">
+              <img src="./img/copy.png" />
+            </button>
+          </div>
+        </div>
+        <div class="sub_wrapper">
+          <div class="ch_length_wrapper">
+            <p class="ch_length_txt">Character Length</p>
+            <p class="ch_length_value" id="ch_length_value">0</p>
+          </div>
+          <div class="ch_length_bar">
+            <input
+              type="range"
+              name=""
+              id="range_bar"
+              class="range-bar"
+              min="0"
+              max="40"
+              value="0"
+            />
+          </div>
+          <ul>
+            <li>
+              <input id="iuc" type="checkbox" name="" id="" />
+              <label>Include Uppercase Letters</label>
+            </li>
+            <li>
+              <input id="ilc" type="checkbox" name="" id="" />
+              <label>Include Lowercase Letters</label>
+            </li>
+            <li>
+              <input id="in" type="checkbox" name="" id="" />
+              <label>Include Numbers</label>
+            </li>
+            <li>
+              <input id="is" type="checkbox" name="" id="" />
+              <label>Include Symbols</label>
+            </li>
+          </ul>
+          <div class="strength_wrapper">
+            <p>STRENGTH</p>
+            <div class="strength_card_container">
+              <div class="strength_card"></div>
+              <div class="strength_card"></div>
+              <div class="strength_card"></div>
+              <div class="strength_card"></div>
+            </div>
+          </div>
+          <button id="generate_btn" class="generate-btn">
+            GENERATE <img src="./img/arrow.png" />
+          </button>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <p class="special">Made by me with 💚</p>
+    </footer>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
